@@ -1,4 +1,4 @@
 # SampleRepo
 This is my first sample git repository
 <br>
-Author-Syam Venkat
+Author-Syam Venkat (Embeeded Software Engineer)
