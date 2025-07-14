@@ -9,7 +9,7 @@ int main()
     {
         return 0;
     }
-    srand(time(0));
+    srand(20);
     for(int i=0;i<5;i++)
     {
         ptr[i] = rand() % 256;
