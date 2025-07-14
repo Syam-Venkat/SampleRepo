@@ -9,16 +9,21 @@ int main()
     {
         return 0;
     }
+    srand(time(0));
     for(int i=0;i<5;i++)
     {
-        ptr[i] = i+1;
+        ptr[i] = rand() % 256;
+        printf("%d ",ptr[i]);
     }
     max = smax = ptr[0];
     for(int i=0;i<5;i++)
     {
-        if(ptr[i]>max)max = ptr[i];
+        if(ptr[i]>max)
+        {   smax = max;
+            max = ptr[i];
+        }
         else if(ptr[i]>smax && ptr[i]<max)smax=ptr[i];
     }
-    printf("Maximum:%d\nSecond Maximum:%d\n",max,smax);
+    printf("\nMaximum:%d\nSecond Maximum:%d\n",max,smax);
     return 0;
 }
